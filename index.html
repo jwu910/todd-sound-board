@@ -1,53 +1,61 @@
 <script type="text/javascript" src="scripts.js"></script>
+<link rel="stylesheet" href="styling.css">
 
+<body>
 <div id="todd-face" align="center">
   <img src="todd.png" height="75%"></img>
-  <div style="position:absolute;top:7.5%;margin-left:auto;margin-right:auto;left:0;right:0;">
-    <h1 id="current-phrase">HI I'M TODD</h1>
+  <div id="current-phrase-container">
+    <div id="current-phrase">HI I'M TODD</div>
   </div>
 </div>
 
-<div id="sounds" align="center" style="position:relative">
-  <div id="squat-comands">
-    <button onClick="playAudio('Squat','commands'); changeCurrentPhrase(this.innerHTML)">Squat</button>
-    <button onClick="playAudio('Rack','commands'); changeCurrentPhrase(this.innerHTML)">Rack</button>
+<div id="sounds" class="container" align="center">
+  <div id="commands" class="block">
+    <div class="category-title">Commands</div>
+    <div id="squat-comands">
+      <div class="btn" onClick="playAudio('Squat','commands'); changeCurrentPhrase(this.innerHTML)">Squat</div>
+      <div class="btn" onClick="playAudio('Rack','commands'); changeCurrentPhrase(this.innerHTML)">Rack</div>
+    </div>
+    
+    <div id="bench-comands">
+      <div class="btn" onClick="playAudio('Start', 'commands'); changeCurrentPhrase(this.innerHTML)">Start</div>
+      <div class="btn" onClick="playAudio('Press', 'commands'); changeCurrentPhrase(this.innerHTML)">Press</div>
+      <div class="btn" onClick="playAudio('Rack','commands'); changeCurrentPhrase(this.innerHTML)">Rack</div>
+  </div>
+    
+    <div id="deadlift-comands">
+      <div class="btn" onClick="playAudio('Down', 'commands'); changeCurrentPhrase(this.innerHTML)">Down</div>
+    </div>
   </div>
   
-  <div id="bench-comands">
-    <button onClick="playAudio('Start', 'commands'); changeCurrentPhrase(this.innerHTML)">Start</button>
-    <button onClick="playAudio('Press', 'commands'); changeCurrentPhrase(this.innerHTML)">Press</button>
-    <button onClick="playAudio('Rack','commands'); changeCurrentPhrase(this.innerHTML)">Rack</button>
+  <div id="cues" class="block">
+    <div class="category-title">Cues</div>
+    <div class="btn" onClick="playAudio('ChestUp', 'cues'); changeCurrentPhrase(this.innerHTML)">Chest Up</div>
+    <div class="btn" onClick="playAudio('DriveOutOfThere', 'cues'); changeCurrentPhrase(this.innerHTML)">Drive Out Of There</div>
+    <div class="btn" onClick="playAudio('Elbows', 'cues'); changeCurrentPhrase(this.innerHTML)">Elbows</div>
+    <div class="btn" onClick="playAudio('Wedge', 'cues'); changeCurrentPhrase(this.innerHTML)">Wedge</div>
   </div>
   
-  <div id="deadlift-comands">
-    <button onClick="playAudio('Down', 'commands'); changeCurrentPhrase(this.innerHTML)">Down</button>
-  </div>
-  
-  <div id="cues">
-    <button onClick="playAudio('ChestUp', 'cues'); changeCurrentPhrase(this.innerHTML)">Chest Up</button>
-    <button onClick="playAudio('DriveOutOfThere', 'cues'); changeCurrentPhrase(this.innerHTML)">Drive Out Of There</button>
-    <button onClick="playAudio('Elbows', 'cues'); changeCurrentPhrase(this.innerHTML)">Elbows</button>
-    <button onClick="playAudio('Wedge', 'cues'); changeCurrentPhrase(this.innerHTML)">Wedge</button>
-  </div>
-  
-  <div id="words-of-encouragement">
+  <div id="words-of-encouragement" class="block">
+    <div class="category-title">Words of Encouragement</div>
     <div id="words-of-encouragement-1">
-      <button onClick="playAudio('ComeOn','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Come On</button>
-      <button onClick="playAudio('Good','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Good</button>
-      <button onClick="playAudio('LilSpeed','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Lil Speed</button>
-      <button onClick="playAudio('OneAtATime','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">One At A Time</button>
+      <div class="btn" onClick="playAudio('ComeOn','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Come On</div>
+      <div class="btn" onClick="playAudio('Good','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Good</div>
+      <div class="btn" onClick="playAudio('LilSpeed','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Lil Speed</div>
+      <div class="btn" onClick="playAudio('OneAtATime','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">One At A Time</div>
     </div>
     <div id="words-of-encouragement-2">
-      <button onClick="playAudio('PR','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">PR</button>
-      <button onClick="playAudio('PullIt','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Pull It</button>
-      <button onClick="playAudio('StayInThere','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Stay In There</button>
-      <button onClick="playAudio('ThatsIt','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">That's It</button>
+      <div class="btn" onClick="playAudio('PR','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">PR</div>
+      <div class="btn" onClick="playAudio('PullIt','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Pull It</div>
+      <div class="btn" onClick="playAudio('StayInThere','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Stay In There</div>
+      <div class="btn" onClick="playAudio('ThatsIt','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">That's It</div>
     </div>
     <div id="words-of-encouragement-3">
-      <button onClick="playAudio('ThereYouGo','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">There You Go</button>
-      <button onClick="playAudio('UpUpUp','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Up Up Up</button>
-      <button onClick="playAudio('Yep','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Yep</button>
-      <button onClick="playAudio('YouGotIt','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">You Got It</button>
+      <div class="btn" onClick="playAudio('ThereYouGo','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">There You Go</div>
+      <div class="btn" onClick="playAudio('UpUpUp','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Up Up Up</div>
+      <div class="btn" onClick="playAudio('Yep','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Yep</div>
+      <div class="btn" onClick="playAudio('YouGotIt','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">You Got It</div> 
     </div>
   </div>
 </div>
+</body>
