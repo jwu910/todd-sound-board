@@ -50,7 +50,12 @@ body {
 .category-title {
     font-size: 24pt;
     font-style: bold;
-    
+    margin: 10px;
+}
+
+.subcategory-title {
+    font-size: 20pt;
+    font-style: bold;   
 }
 
 .container {
