@@ -14,7 +14,7 @@ body {
   border-radius: 28px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 24pt;
+  font-size: 20pt;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   margin:5px;
@@ -48,7 +48,9 @@ body {
 }
 
 .category-title {
-    font-size: 16pt;
+    font-size: 24pt;
+    font-style: bold;
+    
 }
 
 .container {
