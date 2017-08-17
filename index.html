@@ -9,45 +9,45 @@
 
 <div id="sounds" align="center" style="position:relative">
   <div id="squat-comands">
-    <button onClick="playAudio('Squat','commands'); document.getElementById('current-phrase').innerHTML='SQUAT'">Squat</button>
-    <button onClick="playAudio('Rack','commands'); document.getElementById('current-phrase').innerHTML='RACK'">Rack</button>
+    <button onClick="playAudio('Squat','commands'); changeCurrentPhrase(this.innerHTML)">Squat</button>
+    <button onClick="playAudio('Rack','commands'); changeCurrentPhrase(this.innerHTML)">Rack</button>
   </div>
   
   <div id="bench-comands">
-    <button onClick="playAudio('Start', 'commands'); document.getElementById('current-phrase').innerHTML='SQUAT'">Start</button>
-    <button onClick="playAudio('Press', 'commands'); document.getElementById('current-phrase').innerHTML='PRESS'">Press</button>
-    <button onClick="playAudio('Rack','commands'); document.getElementById('current-phrase').innerHTML='RACK'">Rack</button>
+    <button onClick="playAudio('Start', 'commands'); changeCurrentPhrase(this.innerHTML)">Start</button>
+    <button onClick="playAudio('Press', 'commands'); changeCurrentPhrase(this.innerHTML)">Press</button>
+    <button onClick="playAudio('Rack','commands'); changeCurrentPhrase(this.innerHTML)">Rack</button>
   </div>
   
   <div id="deadlift-comands">
-    <button onClick="playAudio('Down', 'commands'); document.getElementById('current-phrase').innerHTML='DOWN'">Down</button>
+    <button onClick="playAudio('Down', 'commands'); changeCurrentPhrase(this.innerHTML)">Down</button>
   </div>
   
   <div id="cues">
-    <button onClick="playAudio('ChestUp', 'cues'); document.getElementById('current-phrase').innerHTML='CHEST UP'">Chest Up</button>
-    <button onClick="playAudio('DriveOutOfThere', 'cues'); document.getElementById('current-phrase').innerHTML='DRIVE OUT OF THERE'">Drive Out Of There</button>
-    <button onClick="playAudio('Elbows', 'cues'); document.getElementById('current-phrase').innerHTML='ELBOWS'">Elbows</button>
-    <button onClick="playAudio('Wedge', 'cues'); document.getElementById('current-phrase').innerHTML='WEDGE'">Wedge</button>
+    <button onClick="playAudio('ChestUp', 'cues'); changeCurrentPhrase(this.innerHTML)">Chest Up</button>
+    <button onClick="playAudio('DriveOutOfThere', 'cues'); changeCurrentPhrase(this.innerHTML)">Drive Out Of There</button>
+    <button onClick="playAudio('Elbows', 'cues'); changeCurrentPhrase(this.innerHTML)">Elbows</button>
+    <button onClick="playAudio('Wedge', 'cues'); changeCurrentPhrase(this.innerHTML)">Wedge</button>
   </div>
   
   <div id="words-of-encouragement">
     <div id="words-of-encouragement-1">
-      <button onClick="playAudio('ComeOn','words-of-encouragement'); document.getElementById('current-phrase').innerHTML='COME ON'">Come On</button>
-      <button onClick="playAudio('Good','words-of-encouragement'); document.getElementById('current-phrase').innerHTML='GOOD'">Good</button>
-      <button onClick="playAudio('LilSpeed','words-of-encouragement'); document.getElementById('current-phrase').innerHTML='LIL SPEED'">Lil Speed</button>
-      <button onClick="playAudio('OneAtATime','words-of-encouragement'); document.getElementById('current-phrase').innerHTML='ONE AT A TIME'">One At A Time</button>
+      <button onClick="playAudio('ComeOn','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Come On</button>
+      <button onClick="playAudio('Good','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Good</button>
+      <button onClick="playAudio('LilSpeed','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Lil Speed</button>
+      <button onClick="playAudio('OneAtATime','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">One At A Time</button>
     </div>
     <div id="words-of-encouragement-2">
-      <button onClick="playAudio('PR','words-of-encouragement'); document.getElementById('current-phrase').innerHTML='PR!'">PR</button>
-      <button onClick="playAudio('PullIt','words-of-encouragement'); document.getElementById('current-phrase').innerHTML='PULL IT'">Pull It</button>
-      <button onClick="playAudio('StayInThere','words-of-encouragement'); document.getElementById('current-phrase').innerHTML='STAY IN THERE'">Stay In There</button>
-      <button onClick="playAudio('ThatsIt','words-of-encouragement'); document.getElementById('current-phrase').innerHTML='THAT\'S IT'">That's It</button>
+      <button onClick="playAudio('PR','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">PR</button>
+      <button onClick="playAudio('PullIt','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Pull It</button>
+      <button onClick="playAudio('StayInThere','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Stay In There</button>
+      <button onClick="playAudio('ThatsIt','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">That's It</button>
     </div>
     <div id="words-of-encouragement-3">
-      <button onClick="playAudio('ThereYouGo','words-of-encouragement'); document.getElementById('current-phrase').innerHTML='THERE YOU GO'">There You Go</button>
-      <button onClick="playAudio('UpUpUp','words-of-encouragement'); document.getElementById('current-phrase').innerHTML='UP UP UP!'">Up Up Up</button>
-      <button onClick="playAudio('Yep','words-of-encouragement'); document.getElementById('current-phrase').innerHTML='YEP!'">Yep</button>
-      <button onClick="playAudio('YouGotIt','words-of-encouragement'); document.getElementById('current-phrase').innerHTML='YOU GOT IT'">You Got It</button>
+      <button onClick="playAudio('ThereYouGo','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">There You Go</button>
+      <button onClick="playAudio('UpUpUp','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Up Up Up</button>
+      <button onClick="playAudio('Yep','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">Yep</button>
+      <button onClick="playAudio('YouGotIt','words-of-encouragement'); changeCurrentPhrase(this.innerHTML)">You Got It</button>
     </div>
   </div>
 </div>

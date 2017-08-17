@@ -4,3 +4,7 @@ function playAudio(phrase, category) {
     var audio = new Audio(location);
     audio.play();
 }
+
+function changeCurrentPhrase(phrase) {
+    document.getElementById('current-phrase').innerHTML = phrase.toUpperCase();
+}
