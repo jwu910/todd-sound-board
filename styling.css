@@ -18,7 +18,10 @@ body {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   margin:5px;
-  width:50%;
+}
+
+.half-width {
+    width:50%;
 }
 
 .btn:hover {
@@ -43,7 +46,7 @@ body {
 
 .block {
     display:inline-block;
-    width: 25%;
+    width: 20%;
     vertical-align: top;
 }
 
@@ -58,11 +61,6 @@ body {
     font-style: bold;   
 }
 
-.container {
-    float:center;
-    position:relative;
-    margin-left:auto;
-    margin-right:auto;
-    left:0;
-    right:0;
+.sub-block {
+    display:inline-block;    
 }
